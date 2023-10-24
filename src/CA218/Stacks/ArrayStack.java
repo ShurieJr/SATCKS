@@ -56,6 +56,10 @@ public class ArrayStack <T> {
 
     //add print Method
     void printElements(){
-        //code
+        if(isEmpty())
+            throw new EmptyStackException();
+
+        for(int i =0; i < size(); i++)
+            System.out.print(stack[i] + " ");
     }
 }
