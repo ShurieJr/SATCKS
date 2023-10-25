@@ -53,6 +53,13 @@ public class ArrayStack<T> {
         return stack[top-1];
     }
 
+    //add print Method
+    void printElements(){
+        if(isEmpty())
+            throw new EmptyStackException();
 
+        for(int i =0; i < size(); i++)
+            System.out.print(stack[i] + " ");
+    }
 
 }

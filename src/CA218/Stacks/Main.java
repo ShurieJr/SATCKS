@@ -47,7 +47,7 @@ public class Main {
         s2.push(4);
         s2.push(3);
         s2.push(4);
-        s2.push(4);
+
 
         System.out.println("s1: ");
         s1.printElements();
