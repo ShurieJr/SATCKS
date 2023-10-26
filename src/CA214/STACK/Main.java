@@ -23,36 +23,36 @@ public class Main {
     firstName.push("kaafi");
 
     firstName.searchElement("osman");
-//
-//    lastName.push("farah");
-//    lastName.push("hassan");
-//    lastName.push("osman");
-//    lastName.push("Geedi");
-//    lastName.push("mohamed");
-//
-//        System.out.println("First Name: ");
-//        firstName.printElements();
-//
-//        System.out.println("Last Names: ");
-//        lastName.printElements();
-//
-////check if the size is same
-//        if(firstName.size() == lastName.size()){
-////            while (! firstName.isEmpty()){
-////                fullName.push(firstName.pop() + " " + lastName.pop());
-////            }
-//            //for loop
-//            int size = firstName.size();
-//            for(int index = 0; index < size; index++){
+
+    lastName.push("farah");
+    lastName.push("hassan");
+    lastName.push("osman");
+    lastName.push("Geedi");
+    lastName.push("mohamed");
+
+        System.out.println("First Name: ");
+        firstName.printElements();
+
+        System.out.println("Last Names: ");
+        lastName.printElements();
+
+//check if the size is same
+        if(firstName.size() == lastName.size()){
+//            while (! firstName.isEmpty()){
 //                fullName.push(firstName.pop() + " " + lastName.pop());
 //            }
-//        }
-//        else{
-//            System.out.println("different sizes!");
-//        }
-//
-//        System.out.println("-----------------Full Names ---------------");
-//        fullName.printElements();
-//
+            //for loop
+            int size = firstName.size();
+            for(int index = 0; index < size; index++){
+                fullName.push(firstName.pop() + " " + lastName.pop());
+            }
+        }
+        else{
+            System.out.println("different sizes!");
+        }
+
+        System.out.println("-----------------Full Names ---------------");
+        fullName.printElements();
+
   }
 }
