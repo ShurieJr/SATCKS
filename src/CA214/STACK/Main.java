@@ -22,7 +22,7 @@ public class Main {
     firstName.push("Ali");
     firstName.push("kaafi");
 
-    firstName.searchElement("osman");
+   // firstName.searchElement("osman");
 
     lastName.push("farah");
     lastName.push("hassan");
