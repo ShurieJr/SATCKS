@@ -62,16 +62,15 @@ public class ArrayStack <T> {
         if(isEmpty())
             System.out.println(" the stack is empty! ");
         else{
-            System.out.print("[ " );
+          //  System.out.print("[ " );
             System.out.print( stack[0]);
-            for (int index=1; index < stack.length; index++){
+            int size = size();
+            for (int index=1; index < size; index++){
                 System.out.print( " , " +  stack[index]);
             }
-            System.out.print(" ]" );
-
+            //System.out.print(" ]" );
+            System.out.println("");
         }
-
-
     }
 
     //homework
@@ -82,4 +81,22 @@ public class ArrayStack <T> {
 
 
     //3. frequency (key)
+    void searchElement(T element){
+        String index="";
+        int times=0;
+
+        if(isEmpty())
+            System.out.println("The stack is empty");
+        else{
+            for(int i = 0 ; i < size(); i++){
+                if(element == stack[i]){
+                    index += i + " , ";
+                    times++;
+                }
+            }
+            System.out.println("Times: " + times);
+            System.out.println("Index: " + index);
+        }
+
+    }
 }
