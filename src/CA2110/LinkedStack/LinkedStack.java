@@ -51,14 +51,25 @@ public class LinkedStack <T> {
             System.out.println("Stack is Empty!");
         else{
             Node<T> current = top;
-           // System.out.println("Top address: " + current);
-            while(current != null){
+             while(current != null){
                 System.out.println("Element : " + current.getElement());
-               // System.out.println("Address : " +current.getNext());
-                current = current.getNext();
+             current = current.getNext();
             }
         }
     }
+
+    //tostring
+    @Override
+    public String toString() {
+        StringBuffer items = new StringBuffer();
+        Node<T> current = top;
+        while(current != null){
+            items.append(current.getElement() + " ");
+            current  = current.getNext();
+        }
+        return items.toString();
+    }
+
 
     //search element
     boolean searchElement(T key){
