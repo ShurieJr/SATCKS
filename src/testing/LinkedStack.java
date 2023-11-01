@@ -81,11 +81,15 @@ public class LinkedStack<T> {
     boolean search(T key){
         boolean found = false;
         Node<T> current = top;
+        StringBuffer addresses = new StringBuffer();
         while (current != null){
-            if( key.equals(current.getElement()))
+            if( key.equals(current.getElement())){
                 found = true;
+                addresses.append(current + "\n");
+            }
             current = current.getNext();
         }
+        System.out.println("Adresses: \n" + addresses );
         return  found;
     }
     int searchTimes(T key){
@@ -153,11 +157,13 @@ public class LinkedStack<T> {
         LinkedStack<String> names = new LinkedStack<>();
         names.push("Ali");
         names.push("Gedi");
-
+        names.push("Ali");
+        names.push("Ali");
 
         System.out.println(names.toString());
+        System.out.println(names.search("Ali"));
 
-        System.out.println(names.reversed());
+        //System.out.println(names.reversed());
         //System.out.println(numbers.toString());
 //        System.out.println("Empty: " + numbers.isEmpty());
 //        System.out.println("removed Element: " + numbers.pop());
