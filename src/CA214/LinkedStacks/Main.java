@@ -1,7 +1,10 @@
 package CA214.LinkedStacks;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         LinkedStack<String> names = new LinkedStack<>();
         names.push("Ali");
         names.push("Farah");
@@ -10,7 +13,9 @@ public class Main {
         names.push("Hawa");
         names.push("Abdi");
 
-        names.search("Hawa");
+        System.out.println("Enter key to search: ");
+        String key = input.nextLine();
+        names.search(key);
 
 //        System.out.println("Size : " + names.size());
 //        System.out.println("Empty : " + names.isEmpty());
